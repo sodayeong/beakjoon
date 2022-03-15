@@ -1,0 +1,10 @@
+a,b = map(int, input().split())
+news = list(map(int, input().split()))
+
+for i in news:
+	prtint(i-a*b, end=' ')
+
+# 첫 번째 줄에 1m2당 사람수와 파티가 열렸던 곳의 넓이가 주어지니까.. a*b 
+# a,b 입력을 받고, 기사에 실려있는 참가자의 수를 list로 받는다. 
+# 입력받은 참가자의 수에 a*b(계산한 참가자의 수)를 빼주고 출력해준다. 
+
