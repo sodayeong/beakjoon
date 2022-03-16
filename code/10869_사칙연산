@@ -1,0 +1,4 @@
+A,B = map(int, input().split())
+print(A+B, A-B, A*B, A//B, A%B, sep='\n')
+
+# 눈 똑바로 뜨라구~ 
