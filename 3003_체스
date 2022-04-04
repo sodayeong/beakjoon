@@ -1,0 +1,11 @@
+# 정해진 말의 수 
+
+chess = [1,1,2,2,2,8]
+
+c = list(map(int, input().split()))
+
+for i in chess: 
+	print(chess[i] - c[i], end =' ')
+
+# 간단한 사칙연산 문제임. 
+# 정해진 말의 수 보다 크면 빼줌. 

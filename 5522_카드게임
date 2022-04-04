@@ -1,0 +1,8 @@
+# 5판 시행 
+# 5판의 input sum 
+ 
+a = 0 
+for i in range(1,6): 
+	a+=int(input())
+print(a)
+
