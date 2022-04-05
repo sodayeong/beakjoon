@@ -1,0 +1,9 @@
+H, M, S = map(int, inpit().split())
+timer = int(input())
+
+H+=timer//60
+M+=timer//60
+S+=timer
+
+print(H%24, M%60, S%60)
+

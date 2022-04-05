@@ -1,0 +1,11 @@
+# 세자리수의 곱셈 풀이과정에서 발생하는 숫자를 출력하는 코드 
+a = int(input())
+b = input()
+
+print(a*int(b[2])) # 1의 자리
+print(a*int(b[1])) # 10의 자리
+print(a*int(b[0])) # 100의 자리
+print(a*int(b)) # 최종결과
+
+
+
