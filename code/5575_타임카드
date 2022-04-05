@@ -5,7 +5,7 @@ for i in range(3):
 	sh, sm, ss, eh, em, es = map(int, input().split())
 	# 초 단위로 변환
 	start = (sh*3600) + (sm*3600) + ss
-	end = (eh&3600) + (em*3600) + es 
+	end = (eh*3600) + (em*3600) + es 
 	
 	# diff
 	t = end - start
