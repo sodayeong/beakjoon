@@ -1,0 +1,21 @@
+import math
+
+# 총 방학일수: L
+# 국어 A, 수학 B
+# 최대 국어 C, 수학 D
+
+L = int(input())
+A = int(input())
+B = int(input())
+C = int(input())
+D = int(input())
+
+k = math.ceil(A/C) # 최대로 미룰 수 있는 국어 숙제 양
+m = math.ceil(B/D) # 최대로 미룰 수 있는 수학 숙제 양
+free = max(k, m)
+
+print(L-free)
+
+
+
+
