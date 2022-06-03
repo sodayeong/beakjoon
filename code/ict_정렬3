@@ -1,0 +1,19 @@
+# 국영수 점수가 주어졌을 때, 조건에 만족하는 정렬
+
+# 국어 점수 > 내림차순
+# 국어 점수가 같을 때는 > 영어 점수 오름차순
+# 국어=영어 > 수학 점수 내림차순
+# 국=영=수 > 이름 사전순으로 증가하는 순서대로(대>소) 
+
+N = int(input())
+
+array = []
+
+for i in range(N):
+    input_data = input().split()
+    array.append((input_data[0], int(input_data[1]), int(input_data[2]), int(input_data[3])))
+
+array = sorted(array, key = lambda x: (-x[1], x[2], -x[3], x[0]))
+
+for data in array:
+    print(data[0])
