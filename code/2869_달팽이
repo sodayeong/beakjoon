@@ -1,0 +1,8 @@
+# math 모듈에서 ceil, floor은 각각 천장과 바닥을 의미
+# A = 올라가는 높이, B = 떨어지는 길이, V = 나무높이 
+# 나무 정상에 도달하기까지 걸리는 날짜를 계산
+
+import math
+A, B, V = map(int, input().split())
+day = math.ceil((V-A)/(A-B))+1
+print(day) 
