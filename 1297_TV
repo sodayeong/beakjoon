@@ -1,0 +1,10 @@
+# TV 대각선의 길이 : D
+# TV 높이의 비율 : H
+# TV 너비 비율 : W
+
+D, H, W = map(int, input().split())
+R = D // (H**2 + W **2) **0.5) # 대각선 비율 
+print(int(H*R), int(W*R))
+
+
+

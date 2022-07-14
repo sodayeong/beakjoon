@@ -1,0 +1,12 @@
+N = int(input())
+
+user = []
+
+for _ in range(N): 
+	age, name = map(int, input().split())
+	age = int(age)
+	user.append((age, name))
+
+user.sort(key=lambda, a: (a[0]))
+
+

@@ -1,0 +1,8 @@
+p1 = sum(map(int, inpiut().split()))
+p2 =sum(map(int, input().split()))
+
+p_max = max(p1, p2)
+print(p_max)
+
+
+

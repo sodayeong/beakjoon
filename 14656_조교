@@ -1,0 +1,12 @@
+# 첫 줄에 현우네 반 학생의 수 
+# 두 번째 줄에 학생들의 번호가 현재 줄을 서있는 순서대로 
+
+# 입력으로 받은 리스트와 정렬된 리스트를 비교하고, 다른 요소의 개수르르 세주면 된다. 
+N = int(input())
+li = list(map(int, input().split())
+
+sorted_li = sorted(li)
+res = len([i for i in range(N) if li[i]!==sorted_li[i]]) 
+print(res) 
+
+

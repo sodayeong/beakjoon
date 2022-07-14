@@ -1,0 +1,20 @@
+# 입력을 초단위로 변환하고 차를 구한 후 
+# 다시 시, 분, 초로 변환하여 출력
+
+for i in range(3):
+	sh, sm, ss, eh, em, es = map(int, input().split())
+	# 초 단위로 변환
+	start = (sh*3600) + (sm*3600) + ss
+	end = (eh*3600) + (em*3600) + es 
+	
+	# diff
+	t = end - start
+
+	# 시간 단위로 변환 
+	h = t//3600
+	m = (t%3600)//60 # 몫= m
+	s = (t%3600)%60  # 나머지= s
+	
+	print(h, m, s)
+
+

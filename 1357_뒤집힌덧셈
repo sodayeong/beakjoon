@@ -1,0 +1,8 @@
+# x, y를 뒤집고 두 정수의 덧셈을 구하는 문제
+# 두 양의 정수 X, Y가 주어졌을 때, rev(rev(x) + rev(y)) > print 할때 한번 더 뒤집어야 조건 만족 
+
+x, y = map(str, input().split())
+
+s = str(int(x[::-1]) + int(y[::-1])) 
+print(int(s[::-1]))
+

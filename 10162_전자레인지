@@ -1,0 +1,23 @@
+# 5 min, 1 min, 10 sec
+# 최소버튼 조작 
+
+t = int(input())
+
+# 작동시간 
+oper_time = [300, 60, 10]
+ans = []
+count = 0
+
+if t%10!=0: 
+	print(-1)
+
+else: 
+	for i in oper_time: 
+		count = t // i
+		ans.append(count)
+		t%=i
+	print(ans[0], ans[1], ans[2], sep= ' ')
+
+
+
+
