@@ -1,0 +1,10 @@
+# 문자열을 뒤집고 마지막 END는 그대로 출력 
+import sys
+
+while True : 
+	str = input()
+	if str == 'END':
+		break
+	reversed_str = str[::-1]
+	print(reversed_str)
+
